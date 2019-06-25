@@ -5,8 +5,7 @@ session_start();
  * maka akan dibawa kembali kehalaman login atau menuju halaman yang seharusnya.
  */
 if ( !isset($_SESSION['user_login']) || 
-    ( isset($_SESSION['user_login']) && $_SESSION['user_login'] != 'admin' ) ) {
-
+    ( isset($_SESSION['user_login']) && $_SESSION['user_login'] 
 	header('location:./../login.php');
 	exit();
 }
